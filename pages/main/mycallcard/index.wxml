@@ -1,0 +1,35 @@
+<!--pages/main/mycallcard/index.wxml-->
+<customer-navbar isFixed="{{isFixed}}"></customer-navbar>
+<view class="content-container">
+  <view class="u-flex">
+    <user-avatar hasBorder="{{true}}" width="148" height="148"></user-avatar>
+    <view class="u-flex_column" style="margin-left: 18rpx;">
+      <text class="u-font-40 fontbold">艾格娃娃</text>
+      <text class="u-font-28 u-font-color-999">很多人一开始为了梦想而忙，后来忙的忘了梦想。</text>
+    </view> 
+  </view>
+  <view class="bg-white basic_info">
+    <view class="u-flex_column">
+      <text>年龄&职业</text>
+      <text>26/产品设计师</text>
+    </view>
+    <view class="u-flex_column">
+      <text>我的爱好</text>
+      <text>运动/旅游/遛娃</text>
+    </view>
+    <view class="u-flex_column">
+      <text>个性签名</text>
+      <text>很多人一开始为了梦想而忙，后来忙的忘了梦想。</text>
+    </view>
+    <view class="u-flex_column">
+      <text>个性图片</text>
+      <view class="u-flex u-row-between">
+        <image wx:for="{{3}}" style="width: 196rpx; height: 196rpx;border-radius: 10rpx" src="/assets/img/jennie1.jpeg"></image>
+      </view>
+    </view>
+  </view>
+  <view class="u-flex u-row-between btns">
+    <van-button round type="info">分享</van-button>
+    <van-button round type="primary">关注</van-button>
+  </view>
+</view>

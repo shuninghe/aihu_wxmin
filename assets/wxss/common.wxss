@@ -1,0 +1,114 @@
+.row,.u-flex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.u-flex_column{
+	display: flex;
+	flex-direction: column;
+}
+.u-flex-wrap {
+	flex-wrap: wrap;
+}
+
+.u-flex-nowrap {
+	flex-wrap: nowrap;
+}
+
+.u-col-center {
+	align-items: center;
+}
+
+.u-col-top {
+	align-items: flex-start;
+}
+
+.u-col-bottom {
+	align-items: flex-end;
+}
+
+.u-row-center {
+	justify-content: center;
+}
+
+.u-row-left {
+	justify-content: flex-start;
+}
+
+.u-row-right {
+	justify-content: flex-end;
+}
+
+.u-row-between {
+	justify-content: space-between;
+}
+
+.u-row-around {
+	justify-content: space-around;
+}
+
+.u-text-left {
+	text-align: left;
+}
+
+.u-text-center {
+	text-align: center;
+}
+
+.u-text-right {
+	text-align: right;
+}
+.u-font-20{
+  font-size: 20rpx !important;
+}
+.u-font-22{
+  font-size: 22rpx !important;
+}
+.u-font-24{
+  font-size: 24rpx !important;
+}
+.u-font-26{
+  font-size: 26rpx !important;
+}
+.u-font-28{
+  font-size: 28rpx !important;
+}
+.u-font-32{
+  font-size: 32rpx !important;
+}
+.u-font-40{
+  font-size: 40rpx !important;
+}
+.u-font-48{
+  font-size: 48rpx !important;
+}
+.fontbold{
+  font-weight: bold;
+}
+.bg-white{
+  background-color: #ffffff;
+}
+.flew-grow{
+  flex-grow: 1;
+}
+.flex-shrink{
+  flex-shrink: 0;
+}
+.u-font-color-666{
+  color: #666666
+}
+.u-font-color-999{
+  color: #999999;
+}
+.main-color{
+  color: #B8EC51
+}
+.main-bg-font-color{
+  color: #036240;
+}
+.main-bgcolor{
+  background: #B8EC51;
+}
+.money-color{
+  color: #F80000;
+}

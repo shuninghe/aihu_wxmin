@@ -1,0 +1,14 @@
+/* components/user-avatar/index.wxss */
+.user-level{
+  position: absolute;
+  right: 7%;
+  bottom: 0;
+  width: 30rpx;
+  height: 30rpx;
+  background-color: aqua;
+  border-radius: 50%;
+}
+.user-avatar-container{
+  border: 1rpx solid;
+  border-radius: 50%;
+}

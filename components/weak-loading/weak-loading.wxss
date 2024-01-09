@@ -1,0 +1,69 @@
+/* components/weak-loading/weak-loading.wxss */
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main{
+	padding: 30rpx 20rpx;
+	background-color: #999999;
+	border-radius: 10rpx;
+  opacity: 0.5;
+  width: 50rpx;
+}
+.wrapper{
+	width: 50rpx;
+	height: 30rpx;
+	position: relative;
+}
+.loading10 .dot {
+	width: 10rpx;
+	height: 10rpx;
+	background: #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	top: calc(50% - 5rpx);
+}
+.loading10 .dot1 {
+	left: 0rpx;
+	-webkit-animation: dot-jump 0.5s cubic-bezier(0.77, 0.47, 0.64, 0.28)
+		alternate infinite;
+	animation: dot-jump 0.5s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate
+		infinite;
+}
+.loading10 .dot2 {
+	left: 20rpx;
+	-webkit-animation: dot-jump 0.5s 0.2s cubic-bezier(0.77, 0.47, 0.64, 0.28)
+		alternate infinite;
+	animation: dot-jump 0.5s 0.2s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate
+		infinite;
+}
+.loading10 .dot3 {
+	left: 40rpx;
+	-webkit-animation: dot-jump 0.5s 0.4s cubic-bezier(0.77, 0.47, 0.64, 0.28)
+		alternate infinite;
+	animation: dot-jump 0.5s 0.4s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate
+		infinite;
+}
+
+@-webkit-keyframes dot-jump {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	100% {
+		-webkit-transform: translateY(-15rpx);
+		transform: translateY(-15rpx);
+	}
+}
+@keyframes dot-jump {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	100% {
+		-webkit-transform: translateY(-15rpx);
+		transform: translateY(-15rpx);
+	}
+}

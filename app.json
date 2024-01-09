@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/tabbar/home/index",
+    "pages/tabbar/notice/index",
+    "pages/tabbar/publish/index",
+    "pages/tabbar/show/index",
+    "pages/tabbar/my/index"
+  ],
+  "subpackages": [
+    {
+      "root": "pages/main/",
+      "pages": [
+        "activitydetail/index",
+        "mycallcard/index"
+      ]
+    },
+    {
+      "root": "pages/login/",
+      "pages": [
+        "signin/index"
+      ]
+    }
+  ],
+  "preloadRule": {},
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabbar/notice/index",
+        "text": "通知"
+      },
+      {
+        "pagePath": "pages/tabbar/publish/index",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/tabbar/show/index",
+        "text": "秀一秀"
+      },
+      {
+        "pagePath": "pages/tabbar/my/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

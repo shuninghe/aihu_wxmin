@@ -1,0 +1,48 @@
+<customer-navbar isFixed="{{isFixed}}"></customer-navbar>
+<view class="content-container">
+  <view class="u-flex">
+    <user-avatar width="148" height="148" hasBorder="{{true}}"></user-avatar>
+    <view class="u-flex_column" style="margin-left: 18rpx;">
+      <text class="fontbold u-font-40">艾格娃娃</text>
+      <text class="u-font-color-999 u-font-28">运动、旅游、遛娃</text>
+      <view class="u-flex">
+        <van-tag type="primary">标签</van-tag>
+        <van-tag type="primary">标签</van-tag>
+        <van-tag type="primary">标签</van-tag>
+      </view>
+    </view>
+  </view>
+  <view style="margin-top: 24rpx;"> 
+    <text class="u-font-28 u-font-color-999">很多人一开始为了梦想而忙，后来忙的忘了梦想。</text>
+  </view>
+  <view class="u-flex u-font-28" style="margin-top: 18rpx">
+    <van-tag>实名认证</van-tag>
+    <van-tag>编辑信息</van-tag>
+  </view>
+  <view class="u-flex u-row-around u-font-28" style="margin-top: 34rpx;">
+    <view class="u-flex_column u-flex">
+      <text class="u-font-48 fontbold">128</text>
+      <text class="u-font-color-999">关注</text>
+    </view>
+    <view class="u-flex_column u-flex">
+      <text class="u-font-48 fontbold">128</text>
+      <text class="u-font-color-999">关注</text>
+    </view>
+    <view class="u-flex_column u-flex">
+      <text class="u-font-48 fontbold">128</text>
+      <text class="u-font-color-999">关注</text>
+    </view>
+  </view>
+  <view class="u-flex my-collect u-row-between">
+    <view class="u-flex u-row-center main-bgcolor main-bg-font-color">我呼起的（34）</view>
+    <view class="u-flex u-row-center">我响应的（18）</view>
+  </view>
+</view>
+<van-cell-group border="{{false}}">
+  <van-cell wx:for="{{menuList}}" center border="{{false}}" is-link>
+    <view slot="title" class="u-flex">
+      <image src="{{item.icon}}" class="list-icon"></image>
+      <view class="van-cell-text">{{item.name}}</view>
+    </view>
+  </van-cell>
+</van-cell-group>

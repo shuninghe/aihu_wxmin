@@ -1,0 +1,20 @@
+/* components/customer-cell-icon/index.wxss */
+.container{
+  width: 20rpx;
+  height: 20rpx;
+  border: 3rpx solid #222222;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 4rpx;
+}
+.main{
+  width: 6rpx;
+  height: 6rpx;
+  border: 3rpx solid #222222;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: burlywood;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "show-card": "/components/show-card/index"
+  },
+  "navigationBarTitleText": "秀一秀"
+}

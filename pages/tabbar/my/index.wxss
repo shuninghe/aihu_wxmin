@@ -1,0 +1,25 @@
+/* pages/my/index.wxss */
+page{
+  background-color: #ffffff;
+  --cell-font-size: 32rpx;
+  --cell-text-color: #000000;
+}
+.content-container{
+  padding: 40rpx;
+}
+.my-collect view{
+  width: 48%;
+  height: 120rpx;
+  border-radius: 12rpx;
+  margin-top: 28rpx;
+  font-size: 32rpx;
+}
+.my-collect view:nth-child(2){
+  background: #FFF44E;
+  color: #575100;
+}
+.list-icon{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 6rpx;
+}

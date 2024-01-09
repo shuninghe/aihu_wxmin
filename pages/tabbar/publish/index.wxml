@@ -1,0 +1,58 @@
+<!--pages/publish/index.wxml-->
+<view class="card-item">
+  <van-field
+    value="{{ value }}"
+    placeholder="给自己的发布取一个标题吧"
+    bind:change="onChange"
+  />
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入想发布的主要内容"
+    border="{{ false }}"
+    bind:change="onChange"
+    type="textarea"
+    autosize="{{autosize}}"
+  />
+</view>
+<van-cell-group inset>
+  <van-cell value="{{value}}" is-link center>
+    <view slot="title" class="u-flex">
+      <image src="/assets/img/icons/type.png" class="item-icon"></image>
+      <view class="van-cell-text">活动类型</view>
+    </view>
+  </van-cell>
+  <van-cell value="{{value}}" is-link center>
+    <view slot="title" class="u-flex">
+      <image src="/assets/img/icons/people.png" class="item-icon"></image>
+      <view class="van-cell-text">需要人数</view>
+    </view>
+  </van-cell>
+  <van-cell value="{{value}}" is-link center>
+    <view slot="title" class="u-flex">
+      <image src="/assets/img/icons/time.png" class="item-icon"></image>
+      <view class="van-cell-text">活动时间</view>
+    </view>
+  </van-cell>
+  <van-cell value="{{value}}" is-link center>
+    <view slot="title" class="u-flex">
+      <image src="/assets/img/icons/location.png" class="item-icon"></image>
+      <view class="van-cell-text">活动地点</view>
+    </view>
+  </van-cell>
+  <van-cell value="{{value}}" is-link center>
+    <view slot="title" class="u-flex">
+      <image src="/assets/img/icons/location.png" class="item-icon"></image>
+      <view class="van-cell-text">碰头地点</view>
+    </view>
+  </van-cell>
+  <van-cell value="{{value}}" is-link center>
+    <view slot="title" class="u-flex">
+      <image src="/assets/img/icons/money.png" class="item-icon"></image>
+      <view class="van-cell-text">费用形式</view>
+    </view>
+  </van-cell>
+  <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+</van-cell-group>
+<view class="u-flex u-row-center">
+  <van-button round type="primary">我要发布</van-button>
+</view>

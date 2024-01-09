@@ -1,0 +1,72 @@
+<!--components/activity-card/index.wxml-->
+<view class="activity-card-container bg-white" catch:tap="toActivityDetail">
+  <view class="user-container u-flex u-row-between">
+    <view class="userinfo u-flex">
+      <user-avatar hasBorder="{{true}}" width="80" height="80"></user-avatar>
+      <view class="username u-flex u-flex_column u-col-top">
+        <text>艾瓦格格房东索科洛夫觉得</text>
+        <text class="u-font-color-999 u-font-24">大玉米房·3分钟前</text>
+      </view>
+    </view>
+    <van-button type="primary" class="response-btn" round size="small">去响应</van-button>
+  </view>
+  <view class="content-container u-flex u-row-between u-col-top">
+    <view class="content-text u-flex u-flex_column u-col-top u-row-between">
+      <view>
+        <view class="fontbold">羽毛球求虐，双打3缺一速来</view>
+        <view class="u-font-26 u-font-color-999">速来，求虐，减肥老师独家福利大煞风景老师发</view>
+      </view>
+      <view class="location tag-border u-flex">
+        <image src="/assets/img/icons/home-location.png"  class="home-icon"></image>
+        <text>高新区雪松路第一条街体育公园</text>
+      </view>
+    </view>
+    <view class="activity-img-container">
+      <van-image
+        radius="8"
+        width="90"
+        height="90"
+        lazy-load
+        src="https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/1e65a60cf3784c8db6fe591ca8e85820_mergeImage.png"
+      />
+      <view class="activity-tag u-font-20">
+        <text>#羽毛球</text>
+      </view>
+    </view>
+  </view>
+  <view style="margin-top: 8rpx;" class="u-flex">
+    <view class="time-section tag-border u-flex">
+      <image src="/assets/img/icons/home-time.png" class="home-icon"></image>
+      <text>10:00至2023-10-21 29:00</text>
+    </view>
+  </view>
+  <view style="margin-top: 8rpx;" class="u-flex u-row-between">
+    <view class="u-flex" style="position: relative;">
+      <view wx:for="{{3}}" style="left: {{index * 24}}rpx;" class="joiner-avatar">
+        <van-image
+          round
+          width="18"
+          height="18"
+          lazy-load
+          src="https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/3173ac5e8e454885a25c2d8228c07355_mergeImage.png"
+        />
+      </view>
+      <view style="left: {{3 * 24}}rpx;" class="remain-seat u-font-20 u-flex">
+        <view class="joiner-avatar" style="position: relative;">
+          <van-image
+            round
+            width="18"
+            height="18"
+            lazy-load
+            src="https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/cd6b076fd27c475ea66ebb87486f5d66_mergeImage.png"
+          />
+        </view>
+        <text>余1座</text>
+      </view>
+    </view>
+    <view class="u-flex">
+      <text class="u-font-color-999 u-font-22">预计人均</text>
+      <text class="u-font-28 money-color">¥15-25</text>
+    </view>
+  </view>
+</view>

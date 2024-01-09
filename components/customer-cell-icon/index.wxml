@@ -1,0 +1,4 @@
+<!--components/customer-cell-icon/index.wxml-->
+<view class="container">
+  <view class="main"></view>
+</view>

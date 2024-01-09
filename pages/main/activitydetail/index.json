@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
+    "customer-cell-icon": "/components/customer-cell-icon/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-button": "@vant/weapp/button/index",
+    "user-avatar": "/components/user-avatar/index"
+  },
+  "navigationBarTitleText": "活动详情"
+}

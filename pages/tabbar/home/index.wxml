@@ -1,0 +1,74 @@
+<!--pages/home/index.wxml-->
+<view class="top-container bg-white {{topActive === 0 ? 'top-bg': ''}}">
+  <view style="height: {{statusBarHeight}}px;"></view>
+  <view class="u-flex u-row-center">
+    <view style="width: 35%;">
+      <view class="top-tabs">
+        <van-tabs class="my-tabs" title-inactive-color="#666666" line-width="20" line-height="2" sticky color="#3B3B3B" active="{{ topActive }}" bind:click="onClickTopTab">
+          <van-tab wx:for="{{topTabs}}" wx:key="*this" title="{{item.name}}">
+          </van-tab>
+        </van-tabs>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{topActive === 0}}" class="second-tabs">
+    <van-tabs title-inactive-color="#666666" sticky line-width="20" line-height="2" color="#3B3B3B" active="{{ actActive }}" bind:click="onClickActTab">
+      <van-tab wx:for="{{secondTabs}}" wx:key="*this" title="{{item.name}}">
+      </van-tab>
+    </van-tabs>
+  </view>
+</view> 
+<block wx:if="{{topActive === 0}}">
+  <view>
+    <van-dropdown-menu>
+      <van-dropdown-item value="{{ value1 }}" options="{{ filterOption1 }}" />
+      <van-dropdown-item value="{{ value2 }}" options="{{ filterOption2 }}" />
+      <van-dropdown-item value="{{ value2 }}" options="{{ filterOption3 }}" />
+    </van-dropdown-menu>
+  </view>
+  <view class="list">
+    <activity-card></activity-card>
+    <activity-card></activity-card>
+  </view>
+</block>
+<!-- 排行榜 -->
+<view wx:if="{{topActive === 1}}" class="bg-white" style="height: 100%;">
+  <view class="leaderboard-container">
+    <view class="fontbold top-tabs u-flex u-row-between u-font-32">
+      <view style="text-shadow: 2px 0px 3px #BEDD1A;" wx:for="{{leaderBoardTabs}}" wx:key="*this">
+        {{item.name}}
+      </view>
+    </view>
+    <view class="u-flex u-row-center top-cycle">
+      <van-button round size="small">日榜</van-button>
+      <van-button round size="small">周榜</van-button>
+      <van-button round size="small">月榜</van-button>
+    </view>
+    <view class="top-three-list u-flex u-col-top u-row-between">
+      <view class="item u-flex_column u-col-center other top-two">
+        <user-avatar width="112" height="112"></user-avatar>
+        <view class="u-font-28">TOP 2</view>
+        <view class="u-font-28 fontbold">艾娃格格</view>
+        <van-button round size="small" type="primary">+关注</van-button>
+        <image class="bg" src="/assets/img/two-bg.png"></image>
+      </view>
+      <view class="item u-flex_column u-col-center top-one">
+        <user-avatar width="140" height="140"></user-avatar>
+        <view class="u-font-28">TOP 1</view>
+        <view class="u-font-28 fontbold">艾娃格格</view>
+        <van-button round size="small" type="primary">+关注</van-button>
+        <image class="bg" src="/assets/img/one-bg.png"></image>
+      </view>
+      <view class="item u-flex_column u-col-center other top-three">
+        <user-avatar width="112" height="112"></user-avatar>
+        <view class="u-font-28">TOP 1</view>
+        <view class="u-font-28 fontbold">艾娃格格</view>
+        <van-button round size="small" type="primary">+关注</van-button>
+        <image class="bg" src="/assets/img/three-bg.png"></image>
+      </view>
+    </view>
+    <view class="leader-board-list">
+      <leader-board-card wx:for="{{10}}"></leader-board-card>
+    </view>
+  </view>
+</view>

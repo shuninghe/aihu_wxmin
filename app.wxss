@@ -1,0 +1,20 @@
+/**app.wxss**/
+@import 'miniprogram_npm/@vant/weapp/common/index.wxss';
+@import "./assets/wxss/common.wxss";
+page {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'miui','Hiragino Sans GB', 'Microsoft Yahei',sans-serif;
+  font-size: 30rpx;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;  
+  -moz-osx-font-smoothing: grayscale; 
+  --button-primary-background-color: #B8EC51;
+  --button-primary-border-color: #B8EC51;
+  --button-primary-color: #036240;
+  --button-normal-font-size: 32rpx;
+  --button-border-radius: 38rpx;
+  --button-info-background-color: #FFB5E8;
+  --button-info-border-color: #F5F5F5;
+  --button-info-color: #A5267E;
+}

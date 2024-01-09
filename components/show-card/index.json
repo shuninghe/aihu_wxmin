@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "user-avatar": "/components/user-avatar",
+    "van-image": "@vant/weapp/image/index"
+  }
+}

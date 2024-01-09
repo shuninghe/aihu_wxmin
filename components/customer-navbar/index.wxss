@@ -1,0 +1,8 @@
+/* components/customer-navbar/index.wxss */
+.customer-navigation{
+  padding-left: 20rpx;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 100;
+}

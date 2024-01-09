@@ -1,0 +1,76 @@
+/* components/activity-card/index.wxss */
+.activity-card-container{
+  margin: 24rpx 20rpx;
+  padding: 24rpx 20rpx;
+  border-radius: 16rpx;
+}
+.response-btn button{
+  font-size: 28rpx;
+  height: 56rpx;
+  padding: 0 28rpx;
+}
+.userinfo{
+  height: 100rpx;
+}
+.username{
+  margin-left: 24rpx
+}
+.content-container{
+  margin-top: 30rpx;
+  height: 180rpx;
+}
+.content-container > view:first-child{
+  margin-right: 18rpx;
+}
+.content-text{
+  height: 100%;
+}
+.location{
+  background: #FFE0F6;
+  color: #C43B9C;
+}
+.time-section{
+  background: #D5F9E9;
+  color: #00A968;
+}
+.home-icon{
+  width: 24rpx;
+  height: 24rpx;
+}
+.remain-seat{
+  background: #FFE9C7;
+  color: #CC8B00;
+  position: absolute;
+  height: 36rpx;
+  white-space: nowrap;
+  border-radius: 20rpx;
+}
+.remain-seat text{
+  padding: 0 16rpx;
+}
+.tag-border{
+  padding: 4rpx 16rpx;
+  border-radius: 20rpx;
+  font-size: 20rpx;
+}
+.tag-border text{
+  margin-left: 4rpx
+}
+.activity-img-container{
+  position: relative;
+}
+.activity-tag{
+  background-color: #000000;
+  opacity: 0.5;
+  border-radius: 200rpx 0rpx 0rpx 200rpx;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 8rpx;
+  padding-left: 8rpx;
+}
+.joiner-avatar{
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+}

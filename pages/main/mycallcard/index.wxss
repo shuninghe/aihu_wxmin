@@ -1,0 +1,38 @@
+/* pages/main/mycallcard/index.wxss */
+page{
+  background-color: #f9f9f9;
+}
+.content-container{
+  padding: 76rpx 40rpx;
+}
+.basic_info{
+  margin-top: 40rpx;
+  padding: 48rpx 24rpx 0;
+  border-radius: 12rpx;
+}
+.basic_info>view{
+  padding-bottom: 48rpx;
+}
+.basic_info>view text:first-child{
+  color: #888888;
+  font-size: 28rpx;
+}
+.basic_info>view text:nth-child(2){
+  font-size: 32rpx;
+  color: #111111;
+}
+.basic_info text{
+  line-height: 2;
+}
+.btns{
+  box-sizing: border-box;
+  padding: 48rpx 0;
+  padding-bottom: 100rpx;
+  width: 100%;
+}
+.btns van-button{
+  width: 47%;
+}
+van-button button{
+  width: 100%;
+}

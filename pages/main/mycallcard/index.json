@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "user-avatar": "/components/user-avatar/index",
+    "van-button": "@vant/weapp/button/index",
+    "customer-navbar": "/components/customer-navbar/index"
+  },
+  "navigationStyle": "custom"
+}

@@ -1,0 +1,14 @@
+/* components/leaderborder-card/index.wxss */
+.card-container{
+  padding: 0 48rpx;
+  margin: 40rpx 0;
+}
+.user-content{
+  margin-left: 16rpx;
+}
+.card-container button{
+  font-size: 28rpx;
+  height: 54rpx;
+  --padding-xs: 0;
+  --button-small-min-width: 110rpx;
+}

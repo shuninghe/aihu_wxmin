@@ -1,0 +1,17 @@
+{
+  "name": "aihu_wxmini",
+  "version": "1.0.0",
+  "description": "爱呼微信小程序",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "@vant/weapp": "^1.11.1",
+    "lodash": "^4.17.21",
+    "production": "0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shuninghe",
+  "license": "ISC"
+}

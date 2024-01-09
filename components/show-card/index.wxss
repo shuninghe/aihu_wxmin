@@ -1,0 +1,7 @@
+/* components/show-card/index.wxss */
+.link-activity-tag{
+  font-size: 22rpx;
+  background-color: aquamarine;
+  border-radius: 10rpx;
+  padding: 4rpx;
+}

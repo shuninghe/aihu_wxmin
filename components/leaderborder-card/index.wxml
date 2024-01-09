@@ -1,0 +1,13 @@
+<!--components/leaderborder-card/index.wxml-->
+<view class="card-container u-flex u-row-between">
+  <view class="u-flex flex-grow">
+    <text class="u-font-32" style="padding: 10rpx;margin-right: 24rpx;">4</text>
+    <user-avatar width="72" height="72"></user-avatar>
+    <view class="u-flex_column user-content">
+      <text class="u-font-28">大脸猫不是猫</text>
+      <text class="u-font-24 u-font-color-999">社区分：990分</text>
+      <text class="u-font-24 u-font-color-999">运动、旅游、遛娃</text>
+    </view>
+  </view>
+  <van-button type="primary" round size="small">+关注</van-button>
+</view>

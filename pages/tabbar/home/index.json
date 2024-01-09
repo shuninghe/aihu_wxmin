@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "activity-card": "/components/activity-card/index",
+    "van-image": "@vant/weapp/image/index",
+    "leader-board-card": "/components/leaderborder-card/index",
+    "user-avatar": "/components/user-avatar/index",
+    "van-button": "@vant/weapp/button/index"
+  },
+  "navigationStyle": "custom"
+}

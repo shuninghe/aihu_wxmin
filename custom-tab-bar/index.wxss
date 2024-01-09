@@ -1,0 +1,4 @@
+.my-tabbar-item-icon{
+  width: 46rpx;
+  height: 48rpx;
+}

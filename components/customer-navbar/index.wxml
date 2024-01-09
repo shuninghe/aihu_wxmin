@@ -1,0 +1,8 @@
+<!--components/customer-navbar/index.wxml-->
+<view class="customer-navigation {{isFixed ? 'bg-white': ''}}">
+  <view style="height: {{statusBarHeight}}px;"></view>
+  <view class="u-flex title" style="height: {{navigationBarHeight}}px;">
+    <van-icon bind:tap="toBack" name="arrow-left" size="22"/>
+    <slot></slot>
+  </view>
+</view>

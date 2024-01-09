@@ -1,0 +1,80 @@
+<!--pages/main/activitydetail/index.wxml-->
+<view class="detail-container bg-white">
+  <view class="user-container u-flex u-row-between">
+    <view class="userinfo u-flex">
+      <user-avatar width="80" height="80" hasBorder="{{true}}"></user-avatar>
+      <view class="username u-flex u-flex_column u-col-top">
+        <text>艾瓦格格</text>
+        <text class="u-font-color-999 u-font-24">大玉米楼·3分钟前</text>
+      </view>
+    </view>
+    <view class="money-color u-font-40">
+      ¥15-25
+    </view>
+  </view>
+  <view class="fontbold title">羽毛球求虐，双打飞机老师的房间里的快速反击老师的</view>
+  <view class="u-font-color-666 desc">热爱打球，上海回来没啥球友，邻居有咩用喜欢的？拉几个邻居打羽毛球，热爱打球，上海大城市回来的</view>
+  <view class="u-flex u-col-top cell-item">
+    <view class="u-flex flex-shrink">
+      <customer-cell-icon></customer-cell-icon>
+      <text>活动地点：</text>
+    </view>
+    <text>河南省郑州市高新区科学大道百姓生活广场A馆</text>
+    <view class="flex-shrink">
+      <image style="width: 40rpx; height: 40rpx;" src="/assets/img/icons/map-navigation.png"></image>
+    </view>
+  </view>
+  <view class="u-flex u-col-top cell-item">
+    <view class="u-flex flex-shrink">
+      <customer-cell-icon></customer-cell-icon>
+      <text>碰头地点：</text>
+    </view>
+    <text>河南省郑州市高新区科学大道百姓生活广场A馆</text>
+    <view class="flex-shrink">
+      <image style="width: 40rpx; height: 40rpx;" src="/assets/img/icons/map-navigation.png"></image>
+    </view>
+  </view>
+  <view class="u-flex cell-item">
+    <view class="u-flex flex-shrink">
+      <customer-cell-icon></customer-cell-icon>
+      <text>活动时间：</text>
+    </view>
+    <text>2023-10-20 10:00</text>
+  </view>
+  <view class="u-flex cell-item">
+    <view class="u-flex flex-shrink">
+      <customer-cell-icon></customer-cell-icon>
+      <text>活动人数：</text>
+    </view>
+    <view class="u-flex">
+      <view class="u-flex flex-grow" style="overflow: scroll;">
+        <view wx:for="{{10}}" style="width: 40rpx; height: 40rpx;margin-right: 8rpx;">
+          <van-image
+            round
+            width="20"
+            height="20"
+            lazy-load
+            src="https://img.yzcdn.cn/vant/cat.jpeg"
+          />
+        </view>
+      </view>
+      <text class="flex-shrink">余2座</text>
+    </view>
+  </view>
+  <view class="u-flex u-row-between btns">
+    <van-button round type="info">分享</van-button>
+    <van-button round type="primary">我要响应</van-button>
+  </view>
+</view>
+<view style="margin-top: 40rpx">
+  <image 
+  style="width: 100%;"
+  mode="widthFix"
+  src="/assets/img/jennie1.jpeg">
+  </image>
+  <image 
+  style="width: 100%;"
+  mode="widthFix"
+  src="/assets/img/jennie2.jpeg">
+  </image>
+</view>

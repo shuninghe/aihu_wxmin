@@ -1,0 +1,117 @@
+/* pages/home/index.wxss */
+page{
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  --tab-font-size: 30rpx;
+  --dropdown-menu-title-font-size: 24rpx;
+  --dropdown-menu-title-text-color: #999999;
+  --dropdown-menu-height: 56rpx;
+}
+.top-bg{
+  background: linear-gradient(#B8F390 50%, #DCFEE8);
+}
+.van-tabs--line, .van-tab {
+  height: 70rpx !important;
+}
+.van-tab{
+  flex-basis: auto !important;
+  padding: 0 14rpx !important;
+}
+.van-tabs__scroll{
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+.second-tabs{
+  padding: 0 26rpx;
+}
+.leaderboard-container{
+  /* background-color: rgb(215, 240, 226); */
+  margin-top: 18rpx;
+  flex-grow: 1;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+.leaderboard-container .top-tabs, .top-cycle{
+  padding: 18rpx 42rpx;
+}
+.leaderboard-container .top-cycle button{
+  font-size: 32rpx;
+  margin: 0 16rpx;
+  height: 56rpx;
+  width: 128rpx;
+}
+.top-three-list{
+  position: relative;
+  padding: 20rpx 56rpx 0;
+}
+.top-three-list .item{
+  --button-small-height: 42rpx;
+  --button-small-min-width: 80rpx;
+  white-space: nowrap;
+  z-index: 1;
+  position: relative;
+}
+.top-one{
+  width: 36%;
+  padding-bottom: 52rpx;
+}
+.top-one>view:nth-child(2){
+  margin-top: 8rpx;
+  background: linear-gradient(180deg, #FF2D00 0%, #FFB71A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  transform: scale(1.4);
+}
+.top-two>view:nth-child(2){
+  margin-top: 8rpx;
+  background: linear-gradient(180deg, #00C6D7 0%, #B1F9FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  transform: scale(1.2);
+}
+.top-three>view:nth-child(2){
+  margin-top: 8rpx;
+  background: linear-gradient(180deg, #EF9400 0%, #FFE195 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  transform: scale(1.2);
+}
+.top-one>view:nth-child(3){
+  margin-bottom: 8rpx;
+  margin-top: 24rpx;
+}
+.item .bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.top-one .bg{
+  top: 80rpx;
+  height: 272rpx;
+}
+.top-two .bg, .top-three .bg{
+  top: 56rpx;
+  height: 230rpx;
+}
+.other>view:nth-child(2){
+  margin-top: 8rpx;
+}
+.other>view:nth-child(3){
+  margin-bottom: 4rpx;
+  margin-top: 16rpx;
+}
+.top-two, .top-three{
+  width: 28.5%;
+  padding-bottom: 28rpx;
+  margin-top: 86rpx;
+}
+.leader-board-list{
+  background: linear-gradient(#EEFCEB, #EEFCEB);
+}

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "user-avatar": "/components/user-avatar/index",
+    "customer-navbar": "/components/customer-navbar/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
+  },
+  "navigationStyle": "custom"
+}

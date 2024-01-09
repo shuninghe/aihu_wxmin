@@ -1,0 +1,14 @@
+/* pages/publish/index.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.card-item{
+  margin: 20rpx;
+  padding: 20rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+}
+.item-icon{
+  width: 32rpx;
+  height: 32rpx;
+}
